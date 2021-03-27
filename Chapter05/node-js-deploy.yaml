@@ -6,6 +6,9 @@ metadata:
     name: node-js-deploy
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      name: node-js-deploy
   template:
     metadata:
       labels:
