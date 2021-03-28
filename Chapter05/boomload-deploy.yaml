@@ -4,6 +4,9 @@ metadata:
   name: boomload-deploy
 spec:
   replicas: 1
+  selector:
+    matchLabels:
+      app: loadgenerator-deploy
   template:
     metadata:
       labels:
